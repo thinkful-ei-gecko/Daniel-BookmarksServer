@@ -19,7 +19,7 @@ bookmarksRouter
 			logger.error('Title, url, description, and rating ar required');
 			return res
 				.status(400)
-				.send('Invalid data')
+				.send('Invalid data. Must contain Title, url description and rating.')
 	 }
 
 	 if(typeof rating !== 'number' || parseInt(rating) > 5 || parseInt(rating) < 0) {
